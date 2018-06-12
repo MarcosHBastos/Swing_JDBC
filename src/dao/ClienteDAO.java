@@ -27,7 +27,7 @@ public class ClienteDAO {
             PreparedStatement stmt = connection.prepareStatement(sql);
             stmt.setString(1, usuario.getNome());
             stmt.setString(2, usuario.getSobrenome());
-            stmt.setString(3, usuario.getCpf());
+            stmt.setInt(3, usuario.getCpf());
             stmt.setString(4, usuario.getRenda());
             stmt.setString(5, usuario.getRg());
             stmt.setString(6, usuario.getEndereco());
