@@ -9,4 +9,4 @@ O formulario "GUI" é o principal, não sei como faz pra deixar ele executando a
 
 Está dando erro para converter int pra string, não sei como resolver isso ~ainda~
 
-A factory faz toda a conexão com o banco, nela vocês colocar usuario e senha do banco de vocês
+A factory faz toda a conexão com o banco, nela vocês podem colocar usuario e senha do banco de vocês
