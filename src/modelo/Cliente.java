@@ -11,12 +11,12 @@ package modelo;
 public class Cliente {
     private String nome;
     private String sobrenome;
-    private int rg;
-    private int cpf;
+    private String rg;
+    private String cpf;
     private String endereco;
     private double renda;
     
-    public Cliente(String nome, String sobrenome, int rg, int cpf, String endereco, double renda) {
+    public Cliente(String nome, String sobrenome, String rg, String cpf, String endereco, double renda) {
         this.nome = nome;
         this.sobrenome = sobrenome;
         this.rg = rg;
@@ -41,19 +41,19 @@ public class Cliente {
         this.sobrenome = sobrenome;
     }
 
-    public int getRg() {
+    public String getRg() {
         return rg;
     }
 
-    public void setRg(int rg) {
+    public void setRg(String rg) {
         this.rg = rg;
     }
 
-    public int getCpf() {
+    public String getCpf() {
         return cpf;
     }
 
-    public void setCpf(int cpf) {
+    public void setCpf(String cpf) {
         this.cpf = cpf;
     }
 

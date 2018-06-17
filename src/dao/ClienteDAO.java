@@ -18,6 +18,7 @@ public class ClienteDAO {
     private Connection connection;
     Long id;
     String nome, sobrenome, cfp, rg, endereco, renda;
+    
     public ClienteDAO(){ 
         this.connection = new ConnectionFactory().getConnection();
     } 
@@ -27,8 +28,8 @@ public class ClienteDAO {
             PreparedStatement stmt = connection.prepareStatement(sql);
             stmt.setString(1, usuario.getNome());
             stmt.setString(2, usuario.getSobrenome());
-            stmt.setInt(3, usuario.getCpf());
-            stmt.setString(4, usuario.getRenda());
+            stmt.setString(3, usuario.getCpf());
+            stmt.setDouble(4, usuario.getRenda());
             stmt.setString(5, usuario.getRg());
             stmt.setString(6, usuario.getEndereco());
             stmt.execute();
@@ -38,7 +39,11 @@ public class ClienteDAO {
             throw new RuntimeException(u);
         } 
         
-    } 
+    }
+    
+    public void lista(){
+    String sql="SELECT * FROM usuario;";
+    
     
 }
 }
